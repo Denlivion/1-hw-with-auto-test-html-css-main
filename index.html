@@ -68,17 +68,22 @@
                 - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
                 - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
-                <div data-cy="hw1-skills-box-pre">
-                
-                    <input type="checkbox" id="tag-checkbox" checked>
-                    <label for="tag-checkbox">Теги</label>
-                    
-                    <input type="checkbox" id="attribute-checkbox">
-                    <label for="attribute-checkbox">Атрибуты</label>
-                    
-                    <input type="checkbox" id="forms-checkbox">
-                    <label for="forms-checkbox">Формы</label>
-                </div>
+                    <div>
+                        <label data-cy="hw1-skills-label">
+                        <input type="checkbox" id="tag-checkbox" checked>
+                            Теги
+                        </label>
+
+                        <label data-cy="hw1-skills-label">
+                        <input type="checkbox" id="attribute-checkbox">
+                            Атрибуты
+                        </label>
+
+                        <label data-cy="hw1-skills-label">
+                        <input type="checkbox" id="forms-checkbox">
+                            Формы
+                        </label>
+                    </div>
         </div>
         <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
         <input placeholder="Новый скилл" type="text" >
